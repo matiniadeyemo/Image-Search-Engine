@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+.container-thing{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color:#dce2e9;
+width: 100%;
+height: 23rem;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+}
+#search-input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    padding: 0 30px;
+}
+.back-arrow {
+    cursor: pointer;
+    font-size: 24px;
+    display: none; 
+}
+.search-info {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+#image-results {
+    display: grid;
+    z-index: 1;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin-top: -70px;
+    width: 95%;
+    padding: 20px;
+    max-width: 1000px;
+}
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 3fr));
+    grid-gap: 15px;
+    padding: 20px;
+    margin-top: -70px;
+    width: 95%;
+    z-index: 1;
+}
+.loading-placeholder {
+    background: #f6f6f6;
+    border-radius: 8px;
+    position: relative;
+    animation: pulse 1.5s infinite;
+    width: 100%;
+}
+.loading-placeholder {
+    height: 200px;
+}
+.loading-placeholder.tall {
+    height: 300px;
+}
+.loading-placeholder.wide {
+    height: 250px;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 0.4; }
+    100% { opacity: 0.8; }
+}
+
+
+#loading.hidden {
+    display: none;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px; 
+}
+
+.image-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+}
+
+.image-location {
+    font-size: 12px;
+    margin: 5px 0 0;
+}
+#show-more {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.loading-placeholder.tall1 {
+    height: 300px;
+    margin-top: -60%;
+}
+.loading-placeholder.small {
+    height: 270px;
+    margin-top: -30%;
+}
+.loading-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    
+}
+.load-long{
+    width:8rem;
+    color: black;
+    padding: 7px;
+    text-align: left;
+    box-sizing: border-box;
+    background-color: #ece4e4;
+}
+.load-short{
+    width: 50%;
+    color: black;
+    padding: 7px;
+    text-align: left;
+    box-sizing: border-box;
+    background-color: #ece4e4;
+}
+#back-arrow {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    top: 50px;
+    left: 50px;
+    display: none; 
+}
+#image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+#modal-content {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width: 500px;
+}
+#modal-content img {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+#close-modal {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+#modal-details {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    color: black;
+    padding: 90px 280px;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px; 
+}
+#modal-image-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+#modal-image-location {
+    font-size: 14px;
+    color: #666;
+}

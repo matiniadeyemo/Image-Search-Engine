@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Image Search </title>
+</head>
+<body>
+
+  <div class="container-thing">
+    <div id="search-container" class="search-container">
+        <input type="text" id="search-input" placeholder="Search for images...">
+    </div>
+    <div id="search-info" class="search-info">
+        <img src="image/arrow-left-solid.svg" id="back-arrow" style="display: none;">
+      <span id="search-message" class="search-message"></span>
+  </div>
+    </div>    
+    <div id="loading" class="masonry-grid hidden">
+        <div class="loading-placeholder">
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>
+        </div>
+        <div class="loading-placeholder tall">
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>
+        </div>
+        <div class="loading-placeholder">
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>
+        </div>
+        <div class="loading-placeholder wide"> 
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>  
+        </div>
+        <div class="loading-placeholder">
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>
+        </div>
+        <div class="loading-placeholder tall1">
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>
+        </div>
+        <div class="loading-placeholder wide">
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>
+        </div>
+        
+        <div class="loading-placeholder tall1">
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>
+        </div>
+        <div class="loading-placeholder small">
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>
+        </div>
+        <div class="loading-placeholder tall1">
+            <div class="loading-container">
+                <div class="load-long"></div>
+                <div class="load-short"></div>
+            </div>
+        </div>
+    </div>  
+    <div id="image-results"></div>
+    <button id="show-more" style="display: none;">Show More</button>
+    <div id="image-modal">
+        <div id="modal-content">
+            <span id="close-modal">X</span>
+            <img id="modal-image" src="" alt="Preview Image">
+            <div id="modal-details">
+                <p id="modal-image-name"></p>
+                <p id="modal-image-location"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+       
+        </script>
+        <script src="script.js"></script>
+</body>
+</html>
